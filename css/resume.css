@@ -1,0 +1,51 @@
+.main{
+	display: flex;
+	border: 2px solid #ddd;
+	margin: 2px;
+	padding: 2px;
+}
+img{
+	width:200px;
+}
+.ldiv{
+	border: 2px solid #ddd;
+	margin: 2px;
+	padding: 2px;
+	flex:1;
+}
+.rdiv{
+	border: 2px solid #ddd;
+	margin: 2px;
+	padding: 2px;
+	flex:3;
+}
+table,td,tr,th{
+	border: 1px solid #000000;
+	border-collapse: collapse;
+}
+/*mobile devices*/
+@media screen and (max-width: 425px){
+	.main{
+		flex-direction: column;
+	}
+	.ldiv{
+		background-color: #c45e45;
+	}
+	.rdiv{
+		background-color: #ddd;
+	}
+}
+/*tablets*/
+@media screen and (min-width:426px) and (max-width: 768px){
+.main{
+		flex-direction: column-reverse;
+	}
+	.ldiv{
+		background-color: #c45e45;
+	}
+	.rdiv{
+		background-color: #ddd;
+	}
+
+}
+
